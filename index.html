@@ -20,29 +20,196 @@
 
 <body class="font-mono font-thin min-h-screen bg-white text-black dark:bg-[#212226] dark:text-white">
     <div class="loader"></div>
-    <main>
-        <nav>
-            <ul class="flex justify-between">
-                <li>
-                    <span class="green-light">•</span>
-                    <a href="http://" class="me">$ Pushpraj Dwivedi (Backend & DevOps Engineer)</a>
-                </li>
-                <li><a href="http://"> [ about ] </a></li>
-                <li><a href="http://"> [ contact ] </a></li>
-                <li><a href="http://"> [ projects ] </a></li>
-                <li><a href="http://"> [ download cv ] </a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul class="flex justify-between">
+            <li>
+                <span class="green-light">•</span>
+                <a href="http://" class="me">$ Pushpraj Dwivedi (Backend & DevOps Engineer)</a>
+            </li>
+            <li><a href="http://"> [about] </a></li>
+            <li><a href="http://"> [contact] </a></li>
+            <li class="has-children"><a href="http://"> [projects] </a>
+                <div class="dropdown">
+                    <ul>
+                        <li> <a href="">
 
-        suggested commands : (click to run)
-        <pre>
-            > whoami
-            > whoami
-        </pre>
-        Backend engineer building messaging infrastructure.
+                                MSGBuddy
+                            </a>
+                        </li>
+                        <li> <a href="">
 
+                                Ecommerce1
+                            </a>
+                        </li>
+                        <li> <a href="">
 
+                                Ecommerce2
+                            </a>
+                        </li>
+                        <li> <a href="">
+
+                                Ecommerce3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="http://"> [download cv] </a></li>
+        </ul>
         <div class="divider"></div>
+    </nav>
+    <main>
+
+
+        <main>
+            <section class="sidebar">
+                <h2>Technical Skills</h2>
+
+                <h3>Languages</h3>
+                <ul>
+                    <li>TypeScript, JavaScript, Python, C#</li>
+                    <li>SQL (PostgreSQL, MySQL, SQLite)</li>
+                </ul>
+
+                <h3>Frontend</h3>
+                <ul>
+                    <li>React.js (Vite)</li>
+                    <li>Tailwind CSS</li>
+                    <li>ShadCN UI</li>
+                    <li>HTML/CSS</li>
+                </ul>
+
+                <h3>Backend</h3>
+                <ul>
+                    <li>Node.js (Express, NestJS)</li>
+                    <li>ASP.NET Core</li>
+                    <li>Prisma ORM</li>
+                    <li>REST API Design</li>
+                    <li>JWT &amp; Passport Authentication</li>
+                </ul>
+
+                <h3>Databases</h3>
+                <ul>
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                    <li>SQLite</li>
+                    <li>Redis</li>
+                </ul>
+
+                <h3>DevOps &amp; Infrastructure</h3>
+                <ul>
+                    <li>Linux Server Administration</li>
+                    <li>Nginx / Apache</li>
+                    <li>Docker</li>
+                    <li>CI/CD (GitHub Actions, Jenkins)</li>
+                    <li>VPS Hardening &amp; Security</li>
+                    <li>systemd, Gunicorn</li>
+                    <li>Bash scripting</li>
+                </ul>
+
+                <h3>Messaging &amp; Integrations</h3>
+                <ul>
+                    <li>WhatsApp Business API (official)</li>
+                    <li>Axios-based API integrations</li>
+                    <li>Bulk asynchronous messaging architecture</li>
+                    <li>Queue systems (Redis/RabbitMQ/Kafka – architectural familiarity)</li>
+                </ul>
+
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git &amp; GitHub workflows</li>
+                    <li>pnpm</li>
+                    <li>Prisma Migrations</li>
+                    <li>tmux</li>
+                    <li>vim</li>
+                </ul>
+            </section>
+            <section class="middle-pane">
+                <h2>Projects</h2>
+
+                <article>
+                    <h3>MsgBuddy (Production SaaS Platform)</h3>
+                    <p>
+                        Scalable WhatsApp Business messaging platform supporting campaign management,
+                        contact segmentation, template-based messaging, analytics, and secure role-based access.
+                    </p>
+                    <ul>
+                        <li>Express.js + TypeScript backend architecture</li>
+                        <li>Prisma ORM with PostgreSQL</li>
+                        <li>Redis integration for async processing</li>
+                        <li>JWT & Passport authentication</li>
+                        <li>Bulk asynchronous messaging system</li>
+                        <li>Designed for multi-channel extensibility (WhatsApp, SMS, Telegram)</li>
+                    </ul>
+                    <p><strong>Tech:</strong> Express, TypeScript, Prisma, PostgreSQL, Redis</p>
+                </article>
+
+                <article>
+                    <h3>CodersGallery (SaaS & Developer Platform)</h3>
+                    <p>
+                        Founder-led platform offering freemium developer tools, educational content,
+                        and scalable SaaS architecture planning.
+                    </p>
+                    <ul>
+                        <li>Modular architecture planning</li>
+                        <li>Monorepo structure setup</li>
+                        <li>CI/CD integration strategy</li>
+                        <li>API-first backend design</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Dynamic Banner Management System</h3>
+                    <p>
+                        Full-stack banner management system with complete admin control over
+                        images, content, button configuration, and visibility.
+                    </p>
+                    <ul>
+                        <li>React frontend + Node.js backend</li>
+                        <li>Admin panel using EJS templates</li>
+                        <li>Full CRUD operations</li>
+                        <li>Multer-based image uploads</li>
+                        <li>Planned migration from JSON storage to PostgreSQL</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Modular Link Shortener</h3>
+                    <p>
+                        Cleanly structured URL shortener built with extensibility and analytics in mind.
+                    </p>
+                    <ul>
+                        <li>NestJS backend</li>
+                        <li>React frontend</li>
+                        <li>Modular service-based architecture</li>
+                        <li>Analytics-ready data model</li>
+                    </ul>
+                </article>
+
+            </section>
+            <section class="right-pane">
+                <h1>Professional Summary</h1>
+                <h2>Recent Work</h2>
+                <p>
+                    Full-stack developer with strong Linux, DevOps, and backend systems knowledge. Experienced in
+                    building production-grade messaging platforms, SaaS products, CI/CD pipelines, and scalable
+                    backend architectures. Comfortable owning infrastructure, debugging servers, and designing APIs
+                    from scratch.
+                </p>
+
+                <p>
+                    Focused on building secure, compliant, and scalable systems with modern tooling.
+                </p>
+            </section>
+
+
+
+
+
+
+        </main>
+
+
     </main>
 
 </body>
