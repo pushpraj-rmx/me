@@ -1,0 +1,83 @@
+/* =========================
+   PRINT STYLES
+========================= */
+@media print {
+
+    /* Page setup */
+    @page {
+        size: A4;
+        margin: 20mm;
+    }
+
+    body {
+        background: white !important;
+        color: black !important;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+
+    /* Remove unnecessary UI */
+    nav,
+    .loader,
+    .dropdown {
+        display: none !important;
+    }
+
+    /* Force single column */
+    main {
+        display: block !important;
+    }
+
+    .sidebar,
+    .middle-pane,
+    .right-pane {
+        width: 100% !important;
+        display: block !important;
+        margin-bottom: 20px;
+    }
+
+    /* Headings */
+    h1 {
+        font-size: 20pt;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 16pt;
+        margin-top: 20px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #000;
+        padding-bottom: 4px;
+    }
+
+    h3 {
+        font-size: 13pt;
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+
+    ul {
+        margin-left: 15px;
+    }
+
+    li {
+        margin-bottom: 3px;
+    }
+
+    p {
+        margin-bottom: 8px;
+    }
+
+    /* Avoid breaking projects across pages */
+    article {
+        page-break-inside: avoid;
+    }
+
+    /* Remove links styling */
+    a {
+        color: black !important;
+        text-decoration: none !important;
+    }
+
+}
